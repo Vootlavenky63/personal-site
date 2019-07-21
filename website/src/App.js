@@ -1,14 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header';
 
+import './App.css';
+import Hero from './Hero';
 function App() {
   return (
     <div className="App">
-    <h1>My Pesonal website</h1>
+    <Header/>
+    <Hero/>
     </div>
     
   );
 }
 
 export default App;
+
