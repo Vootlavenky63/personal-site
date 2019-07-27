@@ -1,0 +1,23 @@
+.family-head{
+    width: 100vw;
+    height: 15vh;
+    background-color: blueviolet;
+    text-align: center;
+    color:greenyellow;
+   justify-content:center;
+   flex-direction: column;
+   padding: 20px;
+   font-size: 70px;
+}
+.family-details{
+    background-color: rgba(0, 2, 2, 0.774);
+    height: 100vh;
+    text-align: center;
+    color:rgb(212, 101, 10);
+   justify-content:center;
+   flex-direction: column;
+   padding: 35px;
+   font-size: 60px;
+   padding: 200px;
+  
+}

@@ -1,0 +1,13 @@
+.image{
+    display: flex;
+    
+    flex-direction: column;
+   
+    justify-content: center;
+    background-color: bisque;
+    align-items: center;
+    /* height: 40vh; */
+    /* width: 100vw; */
+    border-bottom: 2px solid black;
+
+}
