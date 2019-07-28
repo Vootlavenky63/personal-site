@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #F0C27B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
@@ -16,6 +20,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
   
 }
 .hero{
@@ -91,4 +96,46 @@ border-radius: 19px;
   padding: 15px;
   margin: 15px;
   box-shadow: 0px 5px 10px;
+}
+.insta{
+
+  background-color: rgb(248, 246, 246);
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+    height: 77px;
+}
+.subhead1{
+  flex: 0 0 auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    -webkit-box-flex: 0;
+    background-color: #F80E0E;
+
+}
+.subhead2{
+  border-radius: 3px;
+    color: #999;
+    cursor: text;
+    font-size: 14px;
+    font-weight: 300;
+    left: 0;
+    padding: 7px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    z-index: 2;
+}
+.border{
+  box-sizing: content-box;
+    padding: 60px 20px 0;
+    width: calc(100% - 40px);
+    background-color: aqua;
+
+    margin-bottom: 0;
 }
