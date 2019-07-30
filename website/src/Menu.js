@@ -1,9 +1,15 @@
 import React from 'react'
+import './App.css'
 
 export default function Menu() {
     return (
-        <div>
-            <h1>hii am comming for menu component</h1>
+        <div className="menu">
+            <h4>Menu</h4>
+            <h4>home</h4>
+            <h4>contact</h4>
+            <h4>about</h4>
+            
+
             
         </div>
     )
