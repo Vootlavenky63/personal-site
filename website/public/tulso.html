@@ -6,27 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        function my(){
-            var rd1=document.getElementById('rd1');
-            var rd2=document.getElementById('rd2');
-
-            if(rd1.checked==true){
-            alert(rd1.value);
+            function my()
+            {
+                var select=document.getElementById('demo');
+                alert(select.options[select.selectedIndex].value)
             }
-            else {
-                alert(rd2.value);
-            }
-            
-        }
-       
     </script>
 </head>
 <body>
-   <input id="rd1" name="radio1" type="radio"value="frstname">vootla</input>
-   
-   <br>
-   <input id="rd2" name="radio1" type="radio" value="lastname">venkatesh</input>
-   <br>
-   <button onclick="my()" id="bt1">click</button>
+    <select id="demo">
+        <option>js,html,css</option>
+         <option>react</option>
+         <option>express</option>
+         <option>node</option>
+
+    </select>
+    <button onclick="my()">click </button>
 </body>
 </html>
