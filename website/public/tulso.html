@@ -6,24 +6,37 @@
     {
         var username=document.getElementById('uname');
         var password=document.getElementById('pass');
-        if(username.value.trim()==""||password.value.trim()=="")
-        {
+        if(username.value.trim()=="")
+        { 
             alert("invalid details");
+            username.style.border="solid 2px red";
+
+            return false;
+        }
+        else if(password.value.trim().length<5)
+        {
+            alert("password must be above 5 characters");
+            password.style.border="solid 2px red";
+
             return false;
         }
         else{
-            true;
+           return true;
         }
-    }
+            
+        }
+    
     
     </script>
 </head>
 <body>
-    <form onsubmit="return my()" action="login.html">
-        <label>username:</label>
+    <form onsubmit="return my();" action="login.html">
+       
         <input id="uname" type="text" placeholder="username">
-        <br> 
-        <label>password:</label>
+        
+        <br> <br> 
+        
+       
         <input id="pass" type="password" placeholder="password">
         <br> <br>
         <button type="submit">submit</button>
