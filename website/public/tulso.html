@@ -6,27 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        function my()
+        function setNewImage()
         {
-            var para=document.getElementsByClassName('mypara');
-            for(var i=0;i<para.length;i++){
-                para[i].style.color="red";
-
-            }
+          document.getElementById('img').src="mouseout.png"  
+        }
+        function setOldImage()
+        {
+            document.getElementById('img').src="mousein.png"  
         }
     </script>
 </head>
 <body>
-    <p class="mypara">This is paragraph 1</p>
-    <p>This is paragraph 2</p>
-    <p>This is paragraph 3</p>
-    <p class="mypara">This is paragraph 4</p>
-    <p>This is paragraph 5</p>
-    <p class="mypara">This is paragraph 6</p>
-    <br>
-    <button onclick="my()">click</button>
-
-
-    
+    <img id="img" onmouseover="setNewImage()" onmouseout="setOldImage()" src="mousein.png"/>
 </body>
 </html>
