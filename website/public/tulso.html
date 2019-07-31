@@ -2,44 +2,28 @@
 <html lang="en">
 <head>
    <script>
-    function my()
+   function my()
+   {
+    var username=document.getElementById('uname').value;
+    var regx=/E00/;
+    if(regx.test(username))
     {
-        var username=document.getElementById('uname');
-        var password=document.getElementById('pass');
-        if(username.value.trim()=="")
-        { 
-            alert("invalid details");
-            username.style.border="solid 2px red";
-
-            return false;
-        }
-        else if(password.value.trim().length<5)
-        {
-            alert("password must be above 5 characters");
-            password.style.border="solid 2px red";
-
-            return false;
-        }
-        else{
-           return true;
-        }
-            
-        }
-    
+        alert("valid");
+    }
+else{
+    alert("invalid");
+}
+   }
     
     </script>
 </head>
 <body>
-    <form onsubmit="return my();" action="login.html">
+    <form>
        
         <input id="uname" type="text" placeholder="username">
-        
-        <br> <br> 
-        
-       
-        <input id="pass" type="password" placeholder="password">
-        <br> <br>
-        <button type="submit">submit</button>
+        <label id="lbluser" style="color: red;visibility:hidden">invalid username</label>
+         <br> 
+        <button type="submit" onclick="my()">submit</button>
     </form>
 </body>
 </html>
