@@ -6,21 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-            function my()
-            {
-                var select=document.getElementById('demo');
-                alert(select.options[select.selectedIndex].value)
-            }
+        function my()
+        {
+            var para=document.getElementsByTagName('p');
+            para[0].style.color="red";
+            para[1].style.fontFamily="italic";
+            para[2].style.color="blue";
+            // for(var i=0;i<para.length;i++)
+            // {
+            //     para[i].style.fontSize="80";
+            // }
+        }
     </script>
 </head>
 <body>
-    <select id="demo">
-        <option>js,html,css</option>
-         <option>react</option>
-         <option>express</option>
-         <option>node</option>
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+    <p>This is paragraph 6</p>
+    <br>
+    <button onclick="my()">click</button>
 
-    </select>
-    <button onclick="my()">click </button>
+
+    
 </body>
 </html>
