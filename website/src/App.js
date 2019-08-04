@@ -1,32 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React,{useState} from 'react'
+
 export default function App() {
+  const [state, setstate] = useState("venky")
   
- 
+  return (
+    <div>
+      <h1>
+{state}
 
-
-
-  
-
-const [data, setData] = useState([])
-useEffect(() => {
-const fetchData = async () => {
-const result = await axios.delete('https://jsonplaceholder.typicode.com/posts/1',{
-  userId:"abhi"
-})
-
-setData(result.data)
+      </h1>
+      <button onClick={()=>setstate("venkatesh") }>click</button>
+    </div>
+  )
 }
-fetchData()
-}, [])
-console.log(data,"response from server---->")
-return (
-
-<div>
-
-<button />
-</div>
-)
-
-}
-
