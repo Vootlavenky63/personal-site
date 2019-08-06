@@ -1,10 +1,10 @@
 import React from 'react'
-import HooksCounter from './HooksCounter';
+import HooksCounter3 from './HooksCounter3';
 
 export default function App() {
   return (
     <div>
-      <HooksCounter/>
+      <HooksCounter3/>
     </div>
   )
 }
