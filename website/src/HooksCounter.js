@@ -4,7 +4,12 @@ export default function HooksCounter() {
     const [count, setCount] = useState(0)
     return (
         <div>
-            <button onClick={()=>setCount(count+1)}>count{count}</button>
+            <button>count{count}</button>
+            <button onClick={()=>setCount(0)}>Rest</button>
+            <button onClick={()=>setCount(count+1)}>Increment</button>
+
+            <button onClick={()=>setCount(count-1)}>Decrement</button>
+
         </div>
     )
 }
