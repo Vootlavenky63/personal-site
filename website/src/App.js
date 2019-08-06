@@ -1,12 +1,10 @@
 import React from 'react'
-import Funcmpnt from './Funcmpnt';
-import Clscmpnt from './Clscmpnt';
-import EventBind from './EventBind';
+import ClassCounter from './ClassCounter';
 
 export default function App() {
   return (
     <div>
-     <EventBind/>
+     <ClassCounter/>
     </div>
   )
 }
